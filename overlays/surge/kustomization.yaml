@@ -3,13 +3,10 @@ kind: Kustomization
 namespace: prometheus
 bases:
   - ../../base
-resources:
-- deployment.yaml
-- loki-secret.yaml
 
 commonLabels:
   env: surge
   app: loki
 
 patchesStrategicMerge:
-  - patches/loki-secret_patch.yaml
+- loki-secret.yaml
