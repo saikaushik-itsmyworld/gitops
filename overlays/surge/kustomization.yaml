@@ -3,6 +3,9 @@ bases:
 
 namePrefix: surge-
 
+resources:
+- deployment.yaml
+
 commonLabels:
   env: dev
 
