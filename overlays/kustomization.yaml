@@ -1,0 +1,10 @@
+bases:
+  - ../../base
+
+namePrefix: surge-
+
+commonLabels:
+  env: dev
+
+patches:
+  - file.yaml
