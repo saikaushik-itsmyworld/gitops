@@ -100,20 +100,6 @@ metadata:
   name: loki
   namespace: prometheus
 ---
-# Source: loki-stack/charts/loki/templates/secret.yaml
-apiVersion: v1
-kind: Secret
-metadata:
-  name: loki
-  namespace: prometheus
-  labels:
-    app: loki
-    chart: loki-2.3.0
-    release: loki
-    heritage: Helm
-data:
-  loki.yaml: <key>
----
 # Source: loki-stack/charts/fluent-bit/templates/configmap.yaml
 apiVersion: v1
 kind: ConfigMap
